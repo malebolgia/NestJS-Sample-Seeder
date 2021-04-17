@@ -1,0 +1,26 @@
+version: '3.2'
+services:
+  backend_nest_app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - db_nest_app
+
+  db_nest_app:
+    image: mysql:5.7.22
+    restart: always
+    environment:
+      MYSQL_DATABASE: admin
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - db_nest_app_data:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+volumes:
+  db_nest_app_data:
