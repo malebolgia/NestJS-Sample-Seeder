@@ -2,7 +2,7 @@
 
 Seeding with Mysql, included with docker compose
 
-![Initial Output](https://github.com/malebolgia/NestJS-Sample-Seeder/blob/master/blob-image/nestjs-seeder-sample.jpg)
+![Initial Output](https://github.com/malebolgia/NestJS-Sample-Seeder/blob/main/blob-image/nestjs-seeder-sample.jpg)
 
 ```bash
 $ npm i --save @nestjs/typeorm typeorm
@@ -15,7 +15,7 @@ $ docker exec -it your_container_name /bin/sh -c "npm run seed"
 $ npm run seed
 ```
 
-![Initial Output](https://github.com/malebolgia/NestJS-Sample-Seeder/blob/master/blob-image/mysql_seeder_data.jpg)
+![Initial Output](https://github.com/malebolgia/NestJS-Sample-Seeder/blob/main/blob-image/mysql_seeder_data.jpg)
 
 -----------------------
 
