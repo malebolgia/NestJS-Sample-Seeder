@@ -6,7 +6,8 @@ Seeding with Mysql, included with docker compose
 
 ```bash
 $ npm i --save @nestjs/typeorm typeorm
-$ npm install --save typeorm mysql
+$ npm i --save typeorm mysql
+$ npm i --save faker @types/faker
 
 #if using docker
 $ docker exec -it your_container_name /bin/sh -c "npm run seed"

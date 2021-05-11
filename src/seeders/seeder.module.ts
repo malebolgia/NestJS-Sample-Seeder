@@ -1,6 +1,6 @@
 import { Logger, Module } from '@nestjs/common';
 import { PermissionModule } from 'src/permission/permission.module';
-import { PermissionService } from 'src/permission/permission.service';
+import { ProductModule } from 'src/product/product.module';
 import { MysqlDatabaseProviderModule } from 'src/providers/db/mysql/provider.module';
 import { Seeder } from './seeder';
 
@@ -10,7 +10,7 @@ import { Seeder } from './seeder';
  * @module
  */
 @Module({
-  imports: [MysqlDatabaseProviderModule, PermissionModule],
+  imports: [MysqlDatabaseProviderModule, PermissionModule, ProductModule],
   providers: [Logger, Seeder],
 })
 export class SeederModule {}
